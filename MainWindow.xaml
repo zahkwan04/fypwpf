@@ -5,53 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:fypwpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1080" ResizeMode="NoResize" WindowStyle="None" Background="Transparent" 
-        AllowsTransparency="True">
-    <Border Background="Gray" CornerRadius="12">
-        <Grid  >
-            <Grid.ColumnDefinitions  >
-                <ColumnDefinition Width="200" >
-                    
+        Title="MainWindow" Height="600" Width="1080" ResizeMode="NoResize" AllowsTransparency="True" 
+        Background="Transparent" WindowStyle="None" Foreground="Black">
+
+
+    <Border CornerRadius="20" Background="Black">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150">
+
                 </ColumnDefinition>
                 <ColumnDefinition>
-                    
+
                 </ColumnDefinition>
-                
+
+
+
             </Grid.ColumnDefinitions>
-            
-            
+
+
+
             <Grid.RowDefinitions>
-                <RowDefinition Height="25">
-                    
+                <RowDefinition Height="20" />
+                <RowDefinition Height="70"/>
+
+                <RowDefinition Height="20">
+
                 </RowDefinition>
-                <RowDefinition Height="75">
-                    
-                </RowDefinition>
-                <RowDefinition>
-                    
-                </RowDefinition>
-                
+
+
+
             </Grid.RowDefinitions>
 
-            <TextBlock Text="/image here/" Foreground="Black" Grid.Column="0" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" 
-                       VerticalAlignment="Center">
-                
-            </TextBlock>
+            <Grid x:Name="toolbar" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" MouseLeftButtonDown="toolbar_MouseLeftButtonDown" Background="Black" />
+            <Grid Grid.Row="1" Background="#FF34BB9D" >
+                <Image Source="Images\dashboardicon.png" Margin="14,4,17.4,6.2"/>
+            </Grid>
 
-            <TextBlock Text="Traffic Monitoring Dashboard" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" 
-                       HorizontalAlignment="Center" FontSize="30">
-                
-            </TextBlock>
+            <Grid Grid.Row="1" Grid.Column="1" Background="#FF6C7A85"></Grid>
+            <Grid Grid.Row="2" Grid.ColumnSpan="2" Background="White"/>
 
-            <StackPanel Grid.Row="2">
-                <RadioButton Content="Home" FontSize="18" Height="50" Style="{StaticResource MenuButtonTheme}"/>
-                <RadioButton Content="Database" FontSize="18" Height="50" Style="{StaticResource MenuButtonTheme}"/>
-                <RadioButton Content="Statistics" FontSize="18" Height="50" Style="{StaticResource MenuButtonTheme}"/>
 
-            </StackPanel>
-          
-            
+
         </Grid>
-        
+
+
     </Border>
+
 </Window>

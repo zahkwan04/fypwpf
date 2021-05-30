@@ -24,5 +24,10 @@ namespace fypwpf
         {
             InitializeComponent();
         }
+
+        private void toolbar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
     }
 }

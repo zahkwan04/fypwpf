@@ -102,10 +102,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Font\" />
-    <Folder Include="Images\" />
     <Folder Include="MVVM\Model\" />
     <Folder Include="MVVM\ViewModel\" />
     <Folder Include="MVVM\View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dashboardicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
